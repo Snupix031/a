@@ -1,0 +1,6 @@
+numpy==1.24.4
+pandas
+streamlit==1.26.0
+mlxtend
+xgboost
+scikit-learn==1.2.2
