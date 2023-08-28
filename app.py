@@ -22,13 +22,13 @@ def user_input_features():
 
     sex  = st.sidebar.selectbox('Sex',(0,1))
     cp = st.sidebar.selectbox('Chest pain type',(0,1,2,3))
-    tres = st.sidebar.number_input('Resting blood pressure: ')
+    trestbps = st.sidebar.number_input('Resting blood pressure: ')
     chol = st.sidebar.number_input('Serum cholestoral in mg/dl: ')
     fbs = st.sidebar.selectbox('Fasting blood sugar',(0,1))
-    res = st.sidebar.number_input('Resting electrocardiographic results: ')
-    tha = st.sidebar.number_input('Maximum heart rate achieved: ')
-    exa = st.sidebar.selectbox('Exercise induced angina: ',(0,1))
-    old = st.sidebar.number_input('oldpeak ')
+    restecg = st.sidebar.number_input('Resting electrocardiographic results: ')
+    thalach = st.sidebar.number_input('Maximum heart rate achieved: ')
+    exang = st.sidebar.selectbox('Exercise induced angina: ',(0,1))
+    oldpeak = st.sidebar.number_input('oldpeak ')
     slope = st.sidebar.number_input('he slope of the peak exercise ST segmen: ')
     ca = st.sidebar.selectbox('number of major vessels',(0,1,2,3))
     thal = st.sidebar.selectbox('thal',(0,1,2))
@@ -36,13 +36,13 @@ def user_input_features():
     data = {'age': age,
             'sex': sex, 
             'cp': cp,
-            'trestbps':tres,
+            'trestbps':trestbps,
             'chol': chol,
             'fbs': fbs,
-            'restecg': res,
-            'thalach':tha,
-            'exang':exa,
-            'oldpeak':old,
+            'restecg': restecg,
+            'thalach':thalach,
+            'exang':exang,
+            'oldpeak':oldpeak,
             'slope':slope,
             'ca':ca,
             'thal':thal
